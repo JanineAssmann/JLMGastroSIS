@@ -19,13 +19,13 @@
                     if (idCliente != null) {
                         cli = cli.consultar(Integer.parseInt(idCliente));
                         if (cli == null) {
-                            out.write("<div class='alerta alerta-vermlelho'>Cadastro Não Localizado</div>");
+                            out.write("<div class='alerta alerta-vermelho'>Cadastro Não Localizado</div>");
                         } else {
                             try {
                                 cli.excluir();
                                 out.write("<div class='alerta alerta-verde'>Cadastro Excluído com Sucesso</div>");
                             } catch (Exception ex) {
-                                out.write("<div class='alerta alerta-vermlelho'>Erro ao Excluir Cadastro" + ex.getMessage() + "</div>");
+                                out.write("<div class='alerta alerta-vermelho'>Erro ao Excluir Cadastro" + ex.getMessage() + "</div>");
                             }
                         }
                     }

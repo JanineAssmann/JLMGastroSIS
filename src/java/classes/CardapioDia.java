@@ -109,16 +109,6 @@ public class CardapioDia {
         }
         return cardapioDia;
     }
-
-    public LocalDate getDivulgarCardapio() {
-        LocalDate divulgar = LocalDate.now();
-        if (dataCardapio != null && "".equals(dataCardapio)) {
-            dataCardapio = LocalDate.now();
-        } else {
-            System.out.println("Não há cardápio cadastrado para o dia de hoje");
-        }
-        return divulgar;
-    }
     
     public static CardapioDia consultarData(LocalDate dataCardapio) throws Exception {
         Connection con = Conexao.getInstance();

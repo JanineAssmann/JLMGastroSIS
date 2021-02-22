@@ -21,13 +21,13 @@
                     if (idCardapio != null) {
                         menu = menu.consultar(Integer.parseInt(idCardapio));
                         if (menu == null) {
-                            out.write("<div class='alerta alerta-vermlelho'>Cardápio Não Localizado</div>");
+                            out.write("<div class='alerta alerta-vermelho'>Cardápio Não Localizado</div>");
                         } else {
                             try {
                                 menu.excluir();
                                 out.write("<div class='alerta alerta-verde'>Cardápio Excluído com Sucesso</div>");
                             } catch (Exception ex) {
-                                out.write("<div class='alerta alerta-vermlelho'>Erro ao Excluir Cardápio" + ex.getMessage() + "</div>");
+                                out.write("<div class='alerta alerta-vermelho'>Erro ao Excluir Cardápio" + ex.getMessage() + "</div>");
                             }
                         }
                     }

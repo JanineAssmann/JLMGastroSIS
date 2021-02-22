@@ -21,13 +21,13 @@
                     if (idCompra != null) {
                         comp = comp.consultar(Integer.parseInt(idCompra));
                         if (comp == null) {
-                            out.write("<div class='alerta alerta-vermlelho'>Compra Não Localizada</div>");
+                            out.write("<div class='alerta alerta-vermelho'>Compra Não Localizada</div>");
                         } else {
                             try {
                                 comp.excluir();
                                 out.write("<div class='alerta alerta-verde'>Compra Excluída com Sucesso</div>");
                             } catch (Exception ex) {
-                                out.write("<div class='alerta alerta-vermlelho'>Erro ao Excluir Compra" + ex.getMessage() + "</div>");
+                                out.write("<div class='alerta alerta-vermelho'>Erro ao Excluir Compra" + ex.getMessage() + "</div>");
                             }
                         }
                     }

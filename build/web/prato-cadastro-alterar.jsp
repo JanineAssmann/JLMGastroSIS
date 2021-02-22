@@ -30,7 +30,7 @@
                 <h1>Alteração de Dados no Cadastro de Pratos</h1>
                 
                 <form action="prato-recebe-cadastro-alterar.jsp" method="POST" onsubmit="return enviarForm()">
-                    <input type="hidden" name="qtdeIngredientes" id="qtdeIngredientes" value="1"/>
+                    <input type="hidden" name="qtdeIngredientes" id="qtdeIngredientes" value="<%=prato.getIngredientes().size()%>"/>
                     <p class="txt-verde txt-center p-block">Campos com Preenchimento Obrigatório <span class="asterisco">*</span></p>
                     
                     <div class="form-grupo">

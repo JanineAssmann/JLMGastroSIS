@@ -22,13 +22,13 @@
                     if (idVenda != null) {
                         venda = venda.consultar(Integer.parseInt(idVenda));
                         if (venda == null) {
-                            out.write("<div class='alerta alerta-vermlelho'>Venda Não Localizada</div>");
+                            out.write("<div class='alerta alerta-vermelho'>Venda Não Localizada</div>");
                         } else {
                             try {
                                 venda.excluir();
                                 out.write("<div class='alerta alerta-verde'>Venda Excluída com Sucesso</div>");
                             } catch (Exception ex) {
-                                out.write("<div class='alerta alerta-vermlelho'>Erro ao Excluir Venda" + ex.getMessage() + "</div>");
+                                out.write("<div class='alerta alerta-vermelho'>Erro ao Excluir Venda" + ex.getMessage() + "</div>");
                             }
                         }
                     }

@@ -19,13 +19,13 @@
                     if (idProduto != null) {
                         prod = prod.consultar(Integer.parseInt(idProduto));
                         if (prod == null) {
-                            out.write("<div class='alerta alerta-vermlelho'>Produto Não Localizado");
+                            out.write("<div class='alerta alerta-vermelho'>Produto Não Localizado");
                         } else {
                             try {
                                 prod.excluir();
                                 out.write("<div class='alerta alerta-verde'>Produto Excluído com Sucesso</div>");
                             } catch (Exception ex) {
-                                out.write("<div class='alerta alerta-vermlelho'>Erro ao Excluir Produto" + ex.getMessage() + "</div>");
+                                out.write("<div class='alerta alerta-vermelho'>Erro ao Excluir Produto" + ex.getMessage() + "</div>");
                             }
                         }
                     }

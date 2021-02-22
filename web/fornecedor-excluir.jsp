@@ -20,13 +20,13 @@
                     if (idFornecedor != null) {
                         fornec = fornec.consultar(Integer.parseInt(idFornecedor));
                         if (fornec == null) {
-                            out.write("<div class='alerta alerta-vermlelho'>Cadastro Não Localizado</div>");
+                            out.write("<div class='alerta alerta-vermelho'>Cadastro Não Localizado</div>");
                         } else {
                             try {
                                 fornec.excluir();
                                 out.write("<div class='alerta alerta-verde'>Cadastro Excluído com Sucesso</div>");
                             } catch (Exception ex) {
-                                out.write("<div class='alerta alerta-vermlelho'>Erro ao Excluir Cadastro" + ex.getMessage() + "</div>");
+                                out.write("<div class='alerta alerta-vermelho'>Erro ao Excluir Cadastro" + ex.getMessage() + "</div>");
                             }
                         }
                     }

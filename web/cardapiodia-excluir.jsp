@@ -20,13 +20,13 @@
                     if (idCardapioDia != null) {
                         menuDia = menuDia.consultar(Integer.parseInt(idCardapioDia));
                         if (menuDia == null) {
-                            out.write("<div class='alerta alerta-vermlelho'>Cardápio do Dia Não Localizado</div>");
+                            out.write("<div class='alerta alerta-vermelho'>Cardápio do Dia Não Localizado</div>");
                         } else {
                             try {
                                 menuDia.excluir();
                                 out.write("<div class='alerta alerta-verde'>Cardápio do Dia Excluído com Sucesso</div>");
                             } catch (Exception ex) {
-                                out.write("<div class='alerta alerta-vermlelho'>Erro ao Excluir Cardápio do Dia" + ex.getMessage() + "</div>");
+                                out.write("<div class='alerta alerta-vermelho'>Erro ao Excluir Cardápio do Dia" + ex.getMessage() + "</div>");
                             }
                         }
                     }
