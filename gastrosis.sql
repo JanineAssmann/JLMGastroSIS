@@ -5,7 +5,7 @@
 -- Dumped from database version 13.0
 -- Dumped by pg_dump version 13.0
 
--- Started on 2021-02-17 21:35:18
+-- Started on 2021-02-21 23:11:15
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -23,7 +23,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- TOC entry 215 (class 1259 OID 25444)
+-- TOC entry 200 (class 1259 OID 41403)
 -- Name: cardapio; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -40,7 +40,7 @@ CREATE TABLE public.cardapio (
 ALTER TABLE public.cardapio OWNER TO postgres;
 
 --
--- TOC entry 225 (class 1259 OID 25516)
+-- TOC entry 201 (class 1259 OID 41406)
 -- Name: cardapio_dia; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -54,7 +54,7 @@ CREATE TABLE public.cardapio_dia (
 ALTER TABLE public.cardapio_dia OWNER TO postgres;
 
 --
--- TOC entry 224 (class 1259 OID 25514)
+-- TOC entry 202 (class 1259 OID 41409)
 -- Name: cardapio_dia_idcardapiodia_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -71,7 +71,7 @@ ALTER TABLE public.cardapio_dia_idcardapiodia_seq OWNER TO postgres;
 
 --
 -- TOC entry 3160 (class 0 OID 0)
--- Dependencies: 224
+-- Dependencies: 202
 -- Name: cardapio_dia_idcardapiodia_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -79,7 +79,7 @@ ALTER SEQUENCE public.cardapio_dia_idcardapiodia_seq OWNED BY public.cardapio_di
 
 
 --
--- TOC entry 214 (class 1259 OID 25442)
+-- TOC entry 203 (class 1259 OID 41411)
 -- Name: cardapio_idcardapio_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -96,7 +96,7 @@ ALTER TABLE public.cardapio_idcardapio_seq OWNER TO postgres;
 
 --
 -- TOC entry 3161 (class 0 OID 0)
--- Dependencies: 214
+-- Dependencies: 203
 -- Name: cardapio_idcardapio_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -104,7 +104,7 @@ ALTER SEQUENCE public.cardapio_idcardapio_seq OWNED BY public.cardapio.idcardapi
 
 
 --
--- TOC entry 227 (class 1259 OID 25529)
+-- TOC entry 204 (class 1259 OID 41413)
 -- Name: cardapio_venda; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -118,7 +118,7 @@ CREATE TABLE public.cardapio_venda (
 ALTER TABLE public.cardapio_venda OWNER TO postgres;
 
 --
--- TOC entry 226 (class 1259 OID 25527)
+-- TOC entry 205 (class 1259 OID 41416)
 -- Name: cardapio_venda_idcardapiovenda_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -135,7 +135,7 @@ ALTER TABLE public.cardapio_venda_idcardapiovenda_seq OWNER TO postgres;
 
 --
 -- TOC entry 3162 (class 0 OID 0)
--- Dependencies: 226
+-- Dependencies: 205
 -- Name: cardapio_venda_idcardapiovenda_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -143,7 +143,7 @@ ALTER SEQUENCE public.cardapio_venda_idcardapiovenda_seq OWNED BY public.cardapi
 
 
 --
--- TOC entry 205 (class 1259 OID 25378)
+-- TOC entry 206 (class 1259 OID 41418)
 -- Name: cliente; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -169,7 +169,7 @@ CREATE TABLE public.cliente (
 ALTER TABLE public.cliente OWNER TO postgres;
 
 --
--- TOC entry 204 (class 1259 OID 25376)
+-- TOC entry 207 (class 1259 OID 41421)
 -- Name: cliente_idcliente_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -186,7 +186,7 @@ ALTER TABLE public.cliente_idcliente_seq OWNER TO postgres;
 
 --
 -- TOC entry 3163 (class 0 OID 0)
--- Dependencies: 204
+-- Dependencies: 207
 -- Name: cliente_idcliente_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -194,7 +194,7 @@ ALTER SEQUENCE public.cliente_idcliente_seq OWNED BY public.cliente.idcliente;
 
 
 --
--- TOC entry 211 (class 1259 OID 25413)
+-- TOC entry 208 (class 1259 OID 41423)
 -- Name: compra; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -210,7 +210,7 @@ CREATE TABLE public.compra (
 ALTER TABLE public.compra OWNER TO postgres;
 
 --
--- TOC entry 210 (class 1259 OID 25411)
+-- TOC entry 209 (class 1259 OID 41426)
 -- Name: compra_idcompra_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -227,7 +227,7 @@ ALTER TABLE public.compra_idcompra_seq OWNER TO postgres;
 
 --
 -- TOC entry 3164 (class 0 OID 0)
--- Dependencies: 210
+-- Dependencies: 209
 -- Name: compra_idcompra_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -235,7 +235,7 @@ ALTER SEQUENCE public.compra_idcompra_seq OWNED BY public.compra.idcompra;
 
 
 --
--- TOC entry 203 (class 1259 OID 25368)
+-- TOC entry 210 (class 1259 OID 41428)
 -- Name: fornecedor; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -261,7 +261,7 @@ CREATE TABLE public.fornecedor (
 ALTER TABLE public.fornecedor OWNER TO postgres;
 
 --
--- TOC entry 202 (class 1259 OID 25366)
+-- TOC entry 211 (class 1259 OID 41431)
 -- Name: fornecedor_idfornecedor_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -278,7 +278,7 @@ ALTER TABLE public.fornecedor_idfornecedor_seq OWNER TO postgres;
 
 --
 -- TOC entry 3165 (class 0 OID 0)
--- Dependencies: 202
+-- Dependencies: 211
 -- Name: fornecedor_idfornecedor_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -286,7 +286,7 @@ ALTER SEQUENCE public.fornecedor_idfornecedor_seq OWNED BY public.fornecedor.idf
 
 
 --
--- TOC entry 201 (class 1259 OID 25358)
+-- TOC entry 212 (class 1259 OID 41433)
 -- Name: funcionario; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -311,7 +311,7 @@ CREATE TABLE public.funcionario (
 ALTER TABLE public.funcionario OWNER TO postgres;
 
 --
--- TOC entry 200 (class 1259 OID 25356)
+-- TOC entry 213 (class 1259 OID 41436)
 -- Name: funcionario_idfuncionario_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -328,7 +328,7 @@ ALTER TABLE public.funcionario_idfuncionario_seq OWNER TO postgres;
 
 --
 -- TOC entry 3166 (class 0 OID 0)
--- Dependencies: 200
+-- Dependencies: 213
 -- Name: funcionario_idfuncionario_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -336,7 +336,7 @@ ALTER SEQUENCE public.funcionario_idfuncionario_seq OWNED BY public.funcionario.
 
 
 --
--- TOC entry 223 (class 1259 OID 25499)
+-- TOC entry 214 (class 1259 OID 41438)
 -- Name: ingrediente; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -352,7 +352,7 @@ CREATE TABLE public.ingrediente (
 ALTER TABLE public.ingrediente OWNER TO postgres;
 
 --
--- TOC entry 213 (class 1259 OID 25426)
+-- TOC entry 215 (class 1259 OID 41441)
 -- Name: item_compra; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -369,7 +369,7 @@ CREATE TABLE public.item_compra (
 ALTER TABLE public.item_compra OWNER TO postgres;
 
 --
--- TOC entry 212 (class 1259 OID 25424)
+-- TOC entry 216 (class 1259 OID 41444)
 -- Name: item_compra_iditemcompra_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -386,7 +386,7 @@ ALTER TABLE public.item_compra_iditemcompra_seq OWNER TO postgres;
 
 --
 -- TOC entry 3167 (class 0 OID 0)
--- Dependencies: 212
+-- Dependencies: 216
 -- Name: item_compra_iditemcompra_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -394,7 +394,7 @@ ALTER SEQUENCE public.item_compra_iditemcompra_seq OWNED BY public.item_compra.i
 
 
 --
--- TOC entry 219 (class 1259 OID 25470)
+-- TOC entry 217 (class 1259 OID 41446)
 -- Name: item_venda; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -410,7 +410,7 @@ CREATE TABLE public.item_venda (
 ALTER TABLE public.item_venda OWNER TO postgres;
 
 --
--- TOC entry 218 (class 1259 OID 25468)
+-- TOC entry 218 (class 1259 OID 41449)
 -- Name: item_venda_iditemvenda_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -435,7 +435,7 @@ ALTER SEQUENCE public.item_venda_iditemvenda_seq OWNED BY public.item_venda.idit
 
 
 --
--- TOC entry 221 (class 1259 OID 25478)
+-- TOC entry 219 (class 1259 OID 41451)
 -- Name: prato; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -452,7 +452,7 @@ CREATE TABLE public.prato (
 ALTER TABLE public.prato OWNER TO postgres;
 
 --
--- TOC entry 222 (class 1259 OID 25484)
+-- TOC entry 220 (class 1259 OID 41454)
 -- Name: prato_cardapio; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -465,7 +465,7 @@ CREATE TABLE public.prato_cardapio (
 ALTER TABLE public.prato_cardapio OWNER TO postgres;
 
 --
--- TOC entry 220 (class 1259 OID 25476)
+-- TOC entry 221 (class 1259 OID 41457)
 -- Name: prato_idprato_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -482,7 +482,7 @@ ALTER TABLE public.prato_idprato_seq OWNER TO postgres;
 
 --
 -- TOC entry 3169 (class 0 OID 0)
--- Dependencies: 220
+-- Dependencies: 221
 -- Name: prato_idprato_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -490,7 +490,7 @@ ALTER SEQUENCE public.prato_idprato_seq OWNED BY public.prato.idprato;
 
 
 --
--- TOC entry 209 (class 1259 OID 25405)
+-- TOC entry 222 (class 1259 OID 41459)
 -- Name: produto; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -505,7 +505,7 @@ CREATE TABLE public.produto (
 ALTER TABLE public.produto OWNER TO postgres;
 
 --
--- TOC entry 208 (class 1259 OID 25403)
+-- TOC entry 223 (class 1259 OID 41462)
 -- Name: produto_idproduto_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -522,7 +522,7 @@ ALTER TABLE public.produto_idproduto_seq OWNER TO postgres;
 
 --
 -- TOC entry 3170 (class 0 OID 0)
--- Dependencies: 208
+-- Dependencies: 223
 -- Name: produto_idproduto_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -530,7 +530,7 @@ ALTER SEQUENCE public.produto_idproduto_seq OWNED BY public.produto.idproduto;
 
 
 --
--- TOC entry 207 (class 1259 OID 25388)
+-- TOC entry 224 (class 1259 OID 41464)
 -- Name: usuario; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -546,7 +546,7 @@ CREATE TABLE public.usuario (
 ALTER TABLE public.usuario OWNER TO postgres;
 
 --
--- TOC entry 206 (class 1259 OID 25386)
+-- TOC entry 225 (class 1259 OID 41467)
 -- Name: usuario_idusuario_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -563,7 +563,7 @@ ALTER TABLE public.usuario_idusuario_seq OWNER TO postgres;
 
 --
 -- TOC entry 3171 (class 0 OID 0)
--- Dependencies: 206
+-- Dependencies: 225
 -- Name: usuario_idusuario_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -571,7 +571,7 @@ ALTER SEQUENCE public.usuario_idusuario_seq OWNED BY public.usuario.idusuario;
 
 
 --
--- TOC entry 217 (class 1259 OID 25452)
+-- TOC entry 226 (class 1259 OID 41469)
 -- Name: venda; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -588,7 +588,7 @@ CREATE TABLE public.venda (
 ALTER TABLE public.venda OWNER TO postgres;
 
 --
--- TOC entry 216 (class 1259 OID 25450)
+-- TOC entry 227 (class 1259 OID 41472)
 -- Name: venda_idvenda_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -605,7 +605,7 @@ ALTER TABLE public.venda_idvenda_seq OWNER TO postgres;
 
 --
 -- TOC entry 3172 (class 0 OID 0)
--- Dependencies: 216
+-- Dependencies: 227
 -- Name: venda_idvenda_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -613,7 +613,7 @@ ALTER SEQUENCE public.venda_idvenda_seq OWNED BY public.venda.idvenda;
 
 
 --
--- TOC entry 2937 (class 2604 OID 25447)
+-- TOC entry 2930 (class 2604 OID 41474)
 -- Name: cardapio idcardapio; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -621,7 +621,7 @@ ALTER TABLE ONLY public.cardapio ALTER COLUMN idcardapio SET DEFAULT nextval('pu
 
 
 --
--- TOC entry 2941 (class 2604 OID 25519)
+-- TOC entry 2931 (class 2604 OID 41475)
 -- Name: cardapio_dia idcardapiodia; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -629,7 +629,7 @@ ALTER TABLE ONLY public.cardapio_dia ALTER COLUMN idcardapiodia SET DEFAULT next
 
 
 --
--- TOC entry 2942 (class 2604 OID 25532)
+-- TOC entry 2932 (class 2604 OID 41476)
 -- Name: cardapio_venda idcardapiovenda; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -637,7 +637,7 @@ ALTER TABLE ONLY public.cardapio_venda ALTER COLUMN idcardapiovenda SET DEFAULT 
 
 
 --
--- TOC entry 2932 (class 2604 OID 25381)
+-- TOC entry 2933 (class 2604 OID 41477)
 -- Name: cliente idcliente; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -645,7 +645,7 @@ ALTER TABLE ONLY public.cliente ALTER COLUMN idcliente SET DEFAULT nextval('publ
 
 
 --
--- TOC entry 2935 (class 2604 OID 25416)
+-- TOC entry 2934 (class 2604 OID 41478)
 -- Name: compra idcompra; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -653,7 +653,7 @@ ALTER TABLE ONLY public.compra ALTER COLUMN idcompra SET DEFAULT nextval('public
 
 
 --
--- TOC entry 2931 (class 2604 OID 25371)
+-- TOC entry 2935 (class 2604 OID 41479)
 -- Name: fornecedor idfornecedor; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -661,7 +661,7 @@ ALTER TABLE ONLY public.fornecedor ALTER COLUMN idfornecedor SET DEFAULT nextval
 
 
 --
--- TOC entry 2930 (class 2604 OID 25361)
+-- TOC entry 2936 (class 2604 OID 41480)
 -- Name: funcionario idfuncionario; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -669,7 +669,7 @@ ALTER TABLE ONLY public.funcionario ALTER COLUMN idfuncionario SET DEFAULT nextv
 
 
 --
--- TOC entry 2936 (class 2604 OID 25429)
+-- TOC entry 2937 (class 2604 OID 41481)
 -- Name: item_compra iditemcompra; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -677,7 +677,7 @@ ALTER TABLE ONLY public.item_compra ALTER COLUMN iditemcompra SET DEFAULT nextva
 
 
 --
--- TOC entry 2939 (class 2604 OID 25473)
+-- TOC entry 2938 (class 2604 OID 41482)
 -- Name: item_venda iditemvenda; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -685,7 +685,7 @@ ALTER TABLE ONLY public.item_venda ALTER COLUMN iditemvenda SET DEFAULT nextval(
 
 
 --
--- TOC entry 2940 (class 2604 OID 25481)
+-- TOC entry 2939 (class 2604 OID 41483)
 -- Name: prato idprato; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -693,7 +693,7 @@ ALTER TABLE ONLY public.prato ALTER COLUMN idprato SET DEFAULT nextval('public.p
 
 
 --
--- TOC entry 2934 (class 2604 OID 25408)
+-- TOC entry 2940 (class 2604 OID 41484)
 -- Name: produto idproduto; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -701,7 +701,7 @@ ALTER TABLE ONLY public.produto ALTER COLUMN idproduto SET DEFAULT nextval('publ
 
 
 --
--- TOC entry 2933 (class 2604 OID 25391)
+-- TOC entry 2941 (class 2604 OID 41485)
 -- Name: usuario idusuario; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -709,7 +709,7 @@ ALTER TABLE ONLY public.usuario ALTER COLUMN idusuario SET DEFAULT nextval('publ
 
 
 --
--- TOC entry 2938 (class 2604 OID 25455)
+-- TOC entry 2942 (class 2604 OID 41486)
 -- Name: venda idvenda; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -717,8 +717,8 @@ ALTER TABLE ONLY public.venda ALTER COLUMN idvenda SET DEFAULT nextval('public.v
 
 
 --
--- TOC entry 3142 (class 0 OID 25444)
--- Dependencies: 215
+-- TOC entry 3127 (class 0 OID 41403)
+-- Dependencies: 200
 -- Data for Name: cardapio; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -726,11 +726,12 @@ INSERT INTO public.cardapio (idcardapio, desccardapio, qtdepessoas, valorunitari
 INSERT INTO public.cardapio (idcardapio, desccardapio, qtdepessoas, valorunitario, valortotal, buffetinterno) VALUES (1, 'FORMATURA', 2, 23.31999969482422, 46.63999938964844, false);
 INSERT INTO public.cardapio (idcardapio, desccardapio, qtdepessoas, valorunitario, valortotal, buffetinterno) VALUES (3, 'TODOS OS SABORES', 4, 17.81999969482422, 71.29000091552734, false);
 INSERT INTO public.cardapio (idcardapio, desccardapio, qtdepessoas, valorunitario, valortotal, buffetinterno) VALUES (4, 'BUFFET', 4, 19.530000686645508, 78.11000061035156, true);
+INSERT INTO public.cardapio (idcardapio, desccardapio, qtdepessoas, valorunitario, valortotal, buffetinterno) VALUES (6, 'FRANGO COM AÇAI', 2, 23.65999984741211, 47.31999969482422, false);
 
 
 --
--- TOC entry 3152 (class 0 OID 25516)
--- Dependencies: 225
+-- TOC entry 3128 (class 0 OID 41406)
+-- Dependencies: 201
 -- Data for Name: cardapio_dia; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -740,23 +741,24 @@ INSERT INTO public.cardapio_dia (idcardapiodia, idcardapio, datacardapio) VALUES
 INSERT INTO public.cardapio_dia (idcardapiodia, idcardapio, datacardapio) VALUES (18, 4, '2021-02-22');
 INSERT INTO public.cardapio_dia (idcardapiodia, idcardapio, datacardapio) VALUES (19, 4, '2021-02-23');
 INSERT INTO public.cardapio_dia (idcardapiodia, idcardapio, datacardapio) VALUES (20, 4, '2021-02-24');
-INSERT INTO public.cardapio_dia (idcardapiodia, idcardapio, datacardapio) VALUES (21, 4, '2021-02-25');
+INSERT INTO public.cardapio_dia (idcardapiodia, idcardapio, datacardapio) VALUES (22, 6, '2021-02-21');
 
 
 --
--- TOC entry 3154 (class 0 OID 25529)
--- Dependencies: 227
+-- TOC entry 3131 (class 0 OID 41413)
+-- Dependencies: 204
 -- Data for Name: cardapio_venda; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 INSERT INTO public.cardapio_venda (idcardapiovenda, idvenda, idcardapio) VALUES (1, 3, 2);
 INSERT INTO public.cardapio_venda (idcardapiovenda, idvenda, idcardapio) VALUES (2, 3, 3);
 INSERT INTO public.cardapio_venda (idcardapiovenda, idvenda, idcardapio) VALUES (3, 4, 3);
+INSERT INTO public.cardapio_venda (idcardapiovenda, idvenda, idcardapio) VALUES (6, 7, 6);
 
 
 --
--- TOC entry 3132 (class 0 OID 25378)
--- Dependencies: 205
+-- TOC entry 3133 (class 0 OID 41418)
+-- Dependencies: 206
 -- Data for Name: cliente; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -765,8 +767,8 @@ INSERT INTO public.cliente (idcliente, nome, tipo, cpf_cnpj, cep, uf, cidade, ba
 
 
 --
--- TOC entry 3138 (class 0 OID 25413)
--- Dependencies: 211
+-- TOC entry 3135 (class 0 OID 41423)
+-- Dependencies: 208
 -- Data for Name: compra; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -774,11 +776,12 @@ INSERT INTO public.compra (idcompra, datacotacao, datacompra, dataentrada, idfor
 INSERT INTO public.compra (idcompra, datacotacao, datacompra, dataentrada, idfornecedor) VALUES (4, NULL, NULL, '2021-02-11', 7);
 INSERT INTO public.compra (idcompra, datacotacao, datacompra, dataentrada, idfornecedor) VALUES (3, NULL, '2020-12-30', '2021-02-05', 1);
 INSERT INTO public.compra (idcompra, datacotacao, datacompra, dataentrada, idfornecedor) VALUES (1, '2021-02-02', '2021-02-02', '2021-02-02', 3);
+INSERT INTO public.compra (idcompra, datacotacao, datacompra, dataentrada, idfornecedor) VALUES (12, '2021-02-19', '2021-02-19', '2021-02-19', 1);
 
 
 --
--- TOC entry 3130 (class 0 OID 25368)
--- Dependencies: 203
+-- TOC entry 3137 (class 0 OID 41428)
+-- Dependencies: 210
 -- Data for Name: fornecedor; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -790,8 +793,8 @@ INSERT INTO public.fornecedor (idfornecedor, nome, tipo, cpf_cnpj, cep, uf, cida
 
 
 --
--- TOC entry 3128 (class 0 OID 25358)
--- Dependencies: 201
+-- TOC entry 3139 (class 0 OID 41433)
+-- Dependencies: 212
 -- Data for Name: funcionario; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -801,8 +804,8 @@ INSERT INTO public.funcionario (idfuncionario, nome, cpf, cep, uf, cidade, bairr
 
 
 --
--- TOC entry 3150 (class 0 OID 25499)
--- Dependencies: 223
+-- TOC entry 3141 (class 0 OID 41438)
+-- Dependencies: 214
 -- Data for Name: ingrediente; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -812,11 +815,13 @@ INSERT INTO public.ingrediente (idproduto, idprato, qtde, unmedida, valoringredi
 INSERT INTO public.ingrediente (idproduto, idprato, qtde, unmedida, valoringrediente) VALUES (1, 4, 0.6000000238418579, 'KG', 13.5);
 INSERT INTO public.ingrediente (idproduto, idprato, qtde, unmedida, valoringrediente) VALUES (2, 5, 0.5, 'KG', 6);
 INSERT INTO public.ingrediente (idproduto, idprato, qtde, unmedida, valoringrediente) VALUES (9, 3, 0.5, 'KG', 6.800000190734863);
+INSERT INTO public.ingrediente (idproduto, idprato, qtde, unmedida, valoringrediente) VALUES (9, 8, 0.800000011920929, 'KG', 15);
+INSERT INTO public.ingrediente (idproduto, idprato, qtde, unmedida, valoringrediente) VALUES (10, 8, 0.5, 'KG', 3.200000047683716);
 
 
 --
--- TOC entry 3140 (class 0 OID 25426)
--- Dependencies: 213
+-- TOC entry 3142 (class 0 OID 41441)
+-- Dependencies: 215
 -- Data for Name: item_compra; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -833,11 +838,13 @@ INSERT INTO public.item_compra (iditemcompra, qtdecompra, unmedida, valorcompra,
 INSERT INTO public.item_compra (iditemcompra, qtdecompra, unmedida, valorcompra, idcompra, idproduto) VALUES (36, 3, 'KG', 100, 3, 4);
 INSERT INTO public.item_compra (iditemcompra, qtdecompra, unmedida, valorcompra, idcompra, idproduto) VALUES (39, 40, 'KG', 120, 1, 1);
 INSERT INTO public.item_compra (iditemcompra, qtdecompra, unmedida, valorcompra, idcompra, idproduto) VALUES (40, 33, 'KG', 89, 1, 2);
+INSERT INTO public.item_compra (iditemcompra, qtdecompra, unmedida, valorcompra, idcompra, idproduto) VALUES (59, 20, 'KG', 50, 12, 9);
+INSERT INTO public.item_compra (iditemcompra, qtdecompra, unmedida, valorcompra, idcompra, idproduto) VALUES (60, 15, 'KG', 50, 12, 11);
 
 
 --
--- TOC entry 3146 (class 0 OID 25470)
--- Dependencies: 219
+-- TOC entry 3144 (class 0 OID 41446)
+-- Dependencies: 217
 -- Data for Name: item_venda; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -851,11 +858,13 @@ INSERT INTO public.item_venda (iditemvenda, qtdevenda, valorvenda, idcardapioven
 INSERT INTO public.item_venda (iditemvenda, qtdevenda, valorvenda, idcardapiovenda, idprato) VALUES (16, 10, 105.4000015258789, 3, 3);
 INSERT INTO public.item_venda (iditemvenda, qtdevenda, valorvenda, idcardapiovenda, idprato) VALUES (17, 9, 83.69999694824219, 3, 5);
 INSERT INTO public.item_venda (iditemvenda, qtdevenda, valorvenda, idcardapiovenda, idprato) VALUES (18, 9, 188.3699951171875, 3, 4);
+INSERT INTO public.item_venda (iditemvenda, qtdevenda, valorvenda, idcardapiovenda, idprato) VALUES (27, 3, 79.16999816894531, 6, 8);
+INSERT INTO public.item_venda (iditemvenda, qtdevenda, valorvenda, idcardapiovenda, idprato) VALUES (28, 3, 62.790000915527344, 6, 4);
 
 
 --
--- TOC entry 3148 (class 0 OID 25478)
--- Dependencies: 221
+-- TOC entry 3146 (class 0 OID 41451)
+-- Dependencies: 219
 -- Data for Name: prato; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -864,11 +873,12 @@ INSERT INTO public.prato (idprato, nome, rendimento, tempopreparo, valorprato, l
 INSERT INTO public.prato (idprato, nome, rendimento, tempopreparo, valorprato, lucro) VALUES (4, 'TIGELA DE AÇAI', 2, 10, 20.93000030517578, 55);
 INSERT INTO public.prato (idprato, nome, rendimento, tempopreparo, valorprato, lucro) VALUES (5, 'COMPOTA DE AMORA', 2, 5, 9.300000190734863, 55);
 INSERT INTO public.prato (idprato, nome, rendimento, tempopreparo, valorprato, lucro) VALUES (3, 'FRANGO COM SALADA', 2, 45, 10.539999961853027, 55);
+INSERT INTO public.prato (idprato, nome, rendimento, tempopreparo, valorprato, lucro) VALUES (8, 'FRANGO', 2, 30, 26.389999389648438, 45);
 
 
 --
--- TOC entry 3149 (class 0 OID 25484)
--- Dependencies: 222
+-- TOC entry 3147 (class 0 OID 41454)
+-- Dependencies: 220
 -- Data for Name: prato_cardapio; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -886,31 +896,33 @@ INSERT INTO public.prato_cardapio (idprato, idcardapio) VALUES (2, 4);
 INSERT INTO public.prato_cardapio (idprato, idcardapio) VALUES (4, 4);
 INSERT INTO public.prato_cardapio (idprato, idcardapio) VALUES (5, 4);
 INSERT INTO public.prato_cardapio (idprato, idcardapio) VALUES (3, 4);
+INSERT INTO public.prato_cardapio (idprato, idcardapio) VALUES (8, 6);
+INSERT INTO public.prato_cardapio (idprato, idcardapio) VALUES (4, 6);
 
 
 --
--- TOC entry 3136 (class 0 OID 25405)
--- Dependencies: 209
+-- TOC entry 3149 (class 0 OID 41459)
+-- Dependencies: 222
 -- Data for Name: produto; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.produto (idproduto, qtdeproduto, unmedida, descricaoproduto) VALUES (11, 5, 'KG', 'FILÉ MIGNON');
-INSERT INTO public.produto (idproduto, qtdeproduto, unmedida, descricaoproduto) VALUES (9, 5, 'KG', 'PEITO DE FRANGO');
 INSERT INTO public.produto (idproduto, qtdeproduto, unmedida, descricaoproduto) VALUES (4, 3, 'KG', 'PICANHA');
 INSERT INTO public.produto (idproduto, qtdeproduto, unmedida, descricaoproduto) VALUES (5, 2.299999952316284, 'KG', 'ESPINAFRE');
 INSERT INTO public.produto (idproduto, qtdeproduto, unmedida, descricaoproduto) VALUES (13, 4, 'KG', 'COSTELA');
 INSERT INTO public.produto (idproduto, qtdeproduto, unmedida, descricaoproduto) VALUES (3, 5, 'KG', 'ARROZ');
-INSERT INTO public.produto (idproduto, qtdeproduto, unmedida, descricaoproduto) VALUES (1, 4, 'KG', 'AÇAI');
 INSERT INTO public.produto (idproduto, qtdeproduto, unmedida, descricaoproduto) VALUES (2, 7, 'KG', 'AMORA');
 INSERT INTO public.produto (idproduto, qtdeproduto, unmedida, descricaoproduto) VALUES (12, 0.800000011920929, 'KG', 'CHAMPIGNON');
 INSERT INTO public.produto (idproduto, qtdeproduto, unmedida, descricaoproduto) VALUES (7, 5, 'KG', 'FEIJÃO');
 INSERT INTO public.produto (idproduto, qtdeproduto, unmedida, descricaoproduto) VALUES (8, 2.1999998092651367, 'KG', 'LARANJA');
-INSERT INTO public.produto (idproduto, qtdeproduto, unmedida, descricaoproduto) VALUES (10, 10.800000190734863, 'KG', 'TOMATE');
+INSERT INTO public.produto (idproduto, qtdeproduto, unmedida, descricaoproduto) VALUES (11, 20, 'KG', 'FILÉ MIGNON');
+INSERT INTO public.produto (idproduto, qtdeproduto, unmedida, descricaoproduto) VALUES (9, 22.599998474121094, 'KG', 'PEITO DE FRANGO');
+INSERT INTO public.produto (idproduto, qtdeproduto, unmedida, descricaoproduto) VALUES (10, 7.300000190734863, 'KG', 'TOMATE');
+INSERT INTO public.produto (idproduto, qtdeproduto, unmedida, descricaoproduto) VALUES (1, 0.3999977111816406, 'KG', 'AÇAI');
 
 
 --
--- TOC entry 3134 (class 0 OID 25388)
--- Dependencies: 207
+-- TOC entry 3151 (class 0 OID 41464)
+-- Dependencies: 224
 -- Data for Name: usuario; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -921,45 +933,46 @@ INSERT INTO public.usuario (idusuario, nuser, senha, idfuncionario, email) VALUE
 
 
 --
--- TOC entry 3144 (class 0 OID 25452)
--- Dependencies: 217
+-- TOC entry 3153 (class 0 OID 41469)
+-- Dependencies: 226
 -- Data for Name: venda; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 INSERT INTO public.venda (idvenda, dataorcamento, datapedido, dataproducao, idcliente, producao) VALUES (3, NULL, '2021-02-10', '2021-02-18', 2, true);
 INSERT INTO public.venda (idvenda, dataorcamento, datapedido, dataproducao, idcliente, producao) VALUES (4, '2021-02-03', '2021-02-15', '2021-02-25', 1, false);
+INSERT INTO public.venda (idvenda, dataorcamento, datapedido, dataproducao, idcliente, producao) VALUES (7, '2021-02-19', '2021-02-19', '2021-02-25', 1, false);
 
 
 --
 -- TOC entry 3173 (class 0 OID 0)
--- Dependencies: 224
+-- Dependencies: 202
 -- Name: cardapio_dia_idcardapiodia_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.cardapio_dia_idcardapiodia_seq', 21, true);
+SELECT pg_catalog.setval('public.cardapio_dia_idcardapiodia_seq', 22, true);
 
 
 --
 -- TOC entry 3174 (class 0 OID 0)
--- Dependencies: 214
+-- Dependencies: 203
 -- Name: cardapio_idcardapio_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.cardapio_idcardapio_seq', 4, true);
+SELECT pg_catalog.setval('public.cardapio_idcardapio_seq', 6, true);
 
 
 --
 -- TOC entry 3175 (class 0 OID 0)
--- Dependencies: 226
+-- Dependencies: 205
 -- Name: cardapio_venda_idcardapiovenda_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.cardapio_venda_idcardapiovenda_seq', 3, true);
+SELECT pg_catalog.setval('public.cardapio_venda_idcardapiovenda_seq', 6, true);
 
 
 --
 -- TOC entry 3176 (class 0 OID 0)
--- Dependencies: 204
+-- Dependencies: 207
 -- Name: cliente_idcliente_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -968,16 +981,16 @@ SELECT pg_catalog.setval('public.cliente_idcliente_seq', 2, true);
 
 --
 -- TOC entry 3177 (class 0 OID 0)
--- Dependencies: 210
+-- Dependencies: 209
 -- Name: compra_idcompra_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.compra_idcompra_seq', 6, true);
+SELECT pg_catalog.setval('public.compra_idcompra_seq', 12, true);
 
 
 --
 -- TOC entry 3178 (class 0 OID 0)
--- Dependencies: 202
+-- Dependencies: 211
 -- Name: fornecedor_idfornecedor_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -986,7 +999,7 @@ SELECT pg_catalog.setval('public.fornecedor_idfornecedor_seq', 7, true);
 
 --
 -- TOC entry 3179 (class 0 OID 0)
--- Dependencies: 200
+-- Dependencies: 213
 -- Name: funcionario_idfuncionario_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -995,11 +1008,11 @@ SELECT pg_catalog.setval('public.funcionario_idfuncionario_seq', 3, true);
 
 --
 -- TOC entry 3180 (class 0 OID 0)
--- Dependencies: 212
+-- Dependencies: 216
 -- Name: item_compra_iditemcompra_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.item_compra_iditemcompra_seq', 40, true);
+SELECT pg_catalog.setval('public.item_compra_iditemcompra_seq', 60, true);
 
 
 --
@@ -1008,21 +1021,21 @@ SELECT pg_catalog.setval('public.item_compra_iditemcompra_seq', 40, true);
 -- Name: item_venda_iditemvenda_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.item_venda_iditemvenda_seq', 18, true);
+SELECT pg_catalog.setval('public.item_venda_iditemvenda_seq', 28, true);
 
 
 --
 -- TOC entry 3182 (class 0 OID 0)
--- Dependencies: 220
+-- Dependencies: 221
 -- Name: prato_idprato_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.prato_idprato_seq', 5, true);
+SELECT pg_catalog.setval('public.prato_idprato_seq', 8, true);
 
 
 --
 -- TOC entry 3183 (class 0 OID 0)
--- Dependencies: 208
+-- Dependencies: 223
 -- Name: produto_idproduto_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -1031,7 +1044,7 @@ SELECT pg_catalog.setval('public.produto_idproduto_seq', 13, true);
 
 --
 -- TOC entry 3184 (class 0 OID 0)
--- Dependencies: 206
+-- Dependencies: 225
 -- Name: usuario_idusuario_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -1040,15 +1053,15 @@ SELECT pg_catalog.setval('public.usuario_idusuario_seq', 5, true);
 
 --
 -- TOC entry 3185 (class 0 OID 0)
--- Dependencies: 216
+-- Dependencies: 227
 -- Name: venda_idvenda_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.venda_idvenda_seq', 4, true);
+SELECT pg_catalog.setval('public.venda_idvenda_seq', 7, true);
 
 
 --
--- TOC entry 2980 (class 2606 OID 25521)
+-- TOC entry 2946 (class 2606 OID 41488)
 -- Name: cardapio_dia cardapio_dia_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1057,7 +1070,7 @@ ALTER TABLE ONLY public.cardapio_dia
 
 
 --
--- TOC entry 2968 (class 2606 OID 25449)
+-- TOC entry 2944 (class 2606 OID 41490)
 -- Name: cardapio cardapio_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1066,7 +1079,7 @@ ALTER TABLE ONLY public.cardapio
 
 
 --
--- TOC entry 2982 (class 2606 OID 25534)
+-- TOC entry 2948 (class 2606 OID 41492)
 -- Name: cardapio_venda cardapio_venda_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1075,7 +1088,7 @@ ALTER TABLE ONLY public.cardapio_venda
 
 
 --
--- TOC entry 2952 (class 2606 OID 25385)
+-- TOC entry 2950 (class 2606 OID 41494)
 -- Name: cliente cliente_cpf_cnpj_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1084,7 +1097,7 @@ ALTER TABLE ONLY public.cliente
 
 
 --
--- TOC entry 2954 (class 2606 OID 25383)
+-- TOC entry 2952 (class 2606 OID 41496)
 -- Name: cliente cliente_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1093,7 +1106,7 @@ ALTER TABLE ONLY public.cliente
 
 
 --
--- TOC entry 2964 (class 2606 OID 25418)
+-- TOC entry 2954 (class 2606 OID 41498)
 -- Name: compra compra_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1102,7 +1115,7 @@ ALTER TABLE ONLY public.compra
 
 
 --
--- TOC entry 2948 (class 2606 OID 25375)
+-- TOC entry 2956 (class 2606 OID 41500)
 -- Name: fornecedor fornecedor_cpf_cnpj_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1111,7 +1124,7 @@ ALTER TABLE ONLY public.fornecedor
 
 
 --
--- TOC entry 2950 (class 2606 OID 25373)
+-- TOC entry 2958 (class 2606 OID 41502)
 -- Name: fornecedor fornecedor_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1120,7 +1133,7 @@ ALTER TABLE ONLY public.fornecedor
 
 
 --
--- TOC entry 2944 (class 2606 OID 25365)
+-- TOC entry 2960 (class 2606 OID 41504)
 -- Name: funcionario funcionario_cpf_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1129,7 +1142,7 @@ ALTER TABLE ONLY public.funcionario
 
 
 --
--- TOC entry 2946 (class 2606 OID 25363)
+-- TOC entry 2962 (class 2606 OID 41506)
 -- Name: funcionario funcionario_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1138,7 +1151,7 @@ ALTER TABLE ONLY public.funcionario
 
 
 --
--- TOC entry 2978 (class 2606 OID 25503)
+-- TOC entry 2964 (class 2606 OID 41508)
 -- Name: ingrediente ingrediente_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1147,7 +1160,7 @@ ALTER TABLE ONLY public.ingrediente
 
 
 --
--- TOC entry 2966 (class 2606 OID 25431)
+-- TOC entry 2966 (class 2606 OID 41510)
 -- Name: item_compra item_compra_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1156,7 +1169,7 @@ ALTER TABLE ONLY public.item_compra
 
 
 --
--- TOC entry 2972 (class 2606 OID 25475)
+-- TOC entry 2968 (class 2606 OID 41512)
 -- Name: item_venda item_venda_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1165,7 +1178,7 @@ ALTER TABLE ONLY public.item_venda
 
 
 --
--- TOC entry 2976 (class 2606 OID 25488)
+-- TOC entry 2972 (class 2606 OID 41514)
 -- Name: prato_cardapio prato_cardapio_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1174,7 +1187,7 @@ ALTER TABLE ONLY public.prato_cardapio
 
 
 --
--- TOC entry 2974 (class 2606 OID 25483)
+-- TOC entry 2970 (class 2606 OID 41516)
 -- Name: prato prato_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1183,7 +1196,7 @@ ALTER TABLE ONLY public.prato
 
 
 --
--- TOC entry 2962 (class 2606 OID 25410)
+-- TOC entry 2974 (class 2606 OID 41518)
 -- Name: produto produto_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1192,7 +1205,7 @@ ALTER TABLE ONLY public.produto
 
 
 --
--- TOC entry 2956 (class 2606 OID 25397)
+-- TOC entry 2976 (class 2606 OID 41520)
 -- Name: usuario usuario_email_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1201,7 +1214,7 @@ ALTER TABLE ONLY public.usuario
 
 
 --
--- TOC entry 2958 (class 2606 OID 25395)
+-- TOC entry 2978 (class 2606 OID 41522)
 -- Name: usuario usuario_nuser_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1210,7 +1223,7 @@ ALTER TABLE ONLY public.usuario
 
 
 --
--- TOC entry 2960 (class 2606 OID 25393)
+-- TOC entry 2980 (class 2606 OID 41524)
 -- Name: usuario usuario_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1219,7 +1232,7 @@ ALTER TABLE ONLY public.usuario
 
 
 --
--- TOC entry 2970 (class 2606 OID 25457)
+-- TOC entry 2982 (class 2606 OID 41526)
 -- Name: venda venda_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1228,7 +1241,7 @@ ALTER TABLE ONLY public.venda
 
 
 --
--- TOC entry 2994 (class 2606 OID 25522)
+-- TOC entry 2983 (class 2606 OID 41527)
 -- Name: cardapio_dia cardapio_dia_fk0; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1237,7 +1250,7 @@ ALTER TABLE ONLY public.cardapio_dia
 
 
 --
--- TOC entry 2995 (class 2606 OID 25535)
+-- TOC entry 2984 (class 2606 OID 41532)
 -- Name: cardapio_venda cardapio_venda_fk0; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1246,7 +1259,7 @@ ALTER TABLE ONLY public.cardapio_venda
 
 
 --
--- TOC entry 2996 (class 2606 OID 25540)
+-- TOC entry 2985 (class 2606 OID 41537)
 -- Name: cardapio_venda cardapio_venda_fk1; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1255,7 +1268,7 @@ ALTER TABLE ONLY public.cardapio_venda
 
 
 --
--- TOC entry 2984 (class 2606 OID 25419)
+-- TOC entry 2986 (class 2606 OID 41542)
 -- Name: compra compra_fk0; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1264,7 +1277,7 @@ ALTER TABLE ONLY public.compra
 
 
 --
--- TOC entry 2992 (class 2606 OID 25504)
+-- TOC entry 2987 (class 2606 OID 41547)
 -- Name: ingrediente ingrediente_fk0; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1273,7 +1286,7 @@ ALTER TABLE ONLY public.ingrediente
 
 
 --
--- TOC entry 2993 (class 2606 OID 25509)
+-- TOC entry 2988 (class 2606 OID 41552)
 -- Name: ingrediente ingrediente_fk1; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1282,7 +1295,7 @@ ALTER TABLE ONLY public.ingrediente
 
 
 --
--- TOC entry 2985 (class 2606 OID 25432)
+-- TOC entry 2989 (class 2606 OID 41557)
 -- Name: item_compra item_compra_fk0; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1291,7 +1304,7 @@ ALTER TABLE ONLY public.item_compra
 
 
 --
--- TOC entry 2986 (class 2606 OID 25437)
+-- TOC entry 2990 (class 2606 OID 41562)
 -- Name: item_compra item_compra_fk1; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1300,7 +1313,7 @@ ALTER TABLE ONLY public.item_compra
 
 
 --
--- TOC entry 2988 (class 2606 OID 25546)
+-- TOC entry 2991 (class 2606 OID 41567)
 -- Name: item_venda item_venda_fk0; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1309,7 +1322,7 @@ ALTER TABLE ONLY public.item_venda
 
 
 --
--- TOC entry 2989 (class 2606 OID 25551)
+-- TOC entry 2992 (class 2606 OID 41572)
 -- Name: item_venda item_venda_fk1; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1318,7 +1331,7 @@ ALTER TABLE ONLY public.item_venda
 
 
 --
--- TOC entry 2990 (class 2606 OID 25489)
+-- TOC entry 2993 (class 2606 OID 41577)
 -- Name: prato_cardapio prato_cardapio_fk0; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1327,7 +1340,7 @@ ALTER TABLE ONLY public.prato_cardapio
 
 
 --
--- TOC entry 2991 (class 2606 OID 25494)
+-- TOC entry 2994 (class 2606 OID 41582)
 -- Name: prato_cardapio prato_cardapio_fk1; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1336,7 +1349,7 @@ ALTER TABLE ONLY public.prato_cardapio
 
 
 --
--- TOC entry 2983 (class 2606 OID 25398)
+-- TOC entry 2995 (class 2606 OID 41587)
 -- Name: usuario usuario_fk0; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1345,7 +1358,7 @@ ALTER TABLE ONLY public.usuario
 
 
 --
--- TOC entry 2987 (class 2606 OID 25458)
+-- TOC entry 2996 (class 2606 OID 41592)
 -- Name: venda venda_fk0; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1353,7 +1366,7 @@ ALTER TABLE ONLY public.venda
     ADD CONSTRAINT venda_fk0 FOREIGN KEY (idcliente) REFERENCES public.cliente(idcliente);
 
 
--- Completed on 2021-02-17 21:35:21
+-- Completed on 2021-02-21 23:11:15
 
 --
 -- PostgreSQL database dump complete
