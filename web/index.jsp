@@ -21,7 +21,7 @@
                 try {
                     cardapioDia = CardapioDia.consultarData(LocalDate.now());
                 } catch (Exception ex) {
-                    out.write("<div class='alerta alerta-vermlelho'>Erro: " + ex.getMessage() + "</div>");
+                    out.write("<div class='alerta alerta-vermelho'>Erro: " + ex.getMessage() + "</div>");
                 }
                 if (cardapioDia != null) {
                     for(PratoCardapio pratoCardapio : cardapioDia.getCardapio().getPratos()) {
